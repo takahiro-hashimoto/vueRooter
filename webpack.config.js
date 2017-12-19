@@ -28,14 +28,27 @@ module.exports = {
   module: {
     loaders: [
       {
-       test: /\.js$/,
-       loader: 'babel-loader',
-       exclude: /node_modules/,
-       query://loaderに渡したいクエリパラメータを指定します
-        {
+       test: /\.vue$/,
+       loader: 'vue-loader'
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query:{
           presets: ['es2015','stage-0']
         }
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loaders: 'url-loader'
       }
     ]
+  },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    },
+    extensions: ['.js', '.vue', 'vuex', '.json']
   }
 };
