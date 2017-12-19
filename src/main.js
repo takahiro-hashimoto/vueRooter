@@ -1,5 +1,10 @@
-import {hello} from './sub.js';
-import 'babel-polyfill'
 
-// sub.jsに定義されたJavaScriptを実行する。
-hello();
+import router from './router';
+import App from './App.vue';
+
+new Vue({
+  el: '#app',
+  router,
+  store,
+  render: h => h(App)
+});
