@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Top from '../src/pages/Top';
-import About from '../src/pages/About';
-import Contact from '../src/pages/Contact';
+import Top from './pages/Top';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 Vue.use(VueRouter);
 
@@ -21,9 +21,9 @@ const routes = [
   }
 ];
 
-const router = new VueRouter({
-  routes,
-  mode: 'history'
-});
+// const router = new VueRouter({
+//   routes,
+//   mode: 'history'
+// });
 
-export default router;
+export default new VueRouter({routes});

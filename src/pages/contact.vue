@@ -1,5 +1,5 @@
 <template>
   <div>
-    Contactページ
+    ここはContactページです。
   </div>
 </template>

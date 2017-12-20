@@ -11,20 +11,9 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: 'build',
+    contentBase: __dirname + '/',
     port: 8081
   },
-  // ソースマップを有効にする
-  devtool: 'source-map',
-
-  plugins: [
-    // JSファイルのminifyを実行する
-    new webpack.optimize.UglifyJsPlugin({
-      // minify時でもソースマップを利用する
-      sourceMap: true
-    })
-  ],
-
   module: {
     loaders: [
       {

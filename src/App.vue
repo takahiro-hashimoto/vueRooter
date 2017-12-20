@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <router-link to="./pages/top">
+  <div class="header">
+    <router-link to="/">
       top
     </router-link>
-    <router-link to="./pages/about">
+    <router-link to="about">
       about
     </router-link>
-    <router-link to="./pages/contact">
+    <router-link to="contact">
       contact
     </router-link>
     <router-view></router-view>
