@@ -6,6 +6,28 @@
 </head>
 <body>
 <div id='js-app'></div>
-<script src="dist/bundle.js"></script>
+<style>
+  .header {
+    display: table;
+    width: 100%;
+  }
+  .header > * {
+    display: table-cell;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px;
+    color: #fff;
+    background-color: #ccc;
+  }
+
+  .header > *:hover {
+    opacity: .5;
+  }
+
+  .l-header {
+    margin-bottom: 24px;
+  }
+</style>
+<script src='dist/bundle.js'></script>
 </body>
 </html>

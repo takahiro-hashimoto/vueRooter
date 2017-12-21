@@ -11491,10 +11491,10 @@ var routes = [{
   component: _Contact2.default
 }];
 
-// const router = new VueRouter({
-//   routes,
-//   mode: 'history'
-// });
+var router = new _vueRouter2.default({
+  routes: routes,
+  mode: 'history'
+});
 
 exports.default = new _vueRouter2.default({ routes: routes });
 
@@ -14189,9 +14189,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n  ここはTopページです。\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("p", [_vm._v("ここはTopページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはTopページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはTopページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはTopページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはTopページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはTopページです。")])
+    ])
+  }
+]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -14261,9 +14280,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n  ここはAboutページです。\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("p", [_vm._v("ここはAboutページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはAboutページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはAboutページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはAboutページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはAboutページです。")])
+    ])
+  }
+]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -14333,9 +14369,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n  ここはContactページです。\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("p", [_vm._v("ここはContactページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはContactページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはContactページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはContactページです。")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("ここはContactページです。")])
+    ])
+  }
+]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -14405,24 +14458,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "header" },
-    [
-      _c("router-link", { attrs: { to: "/" } }, [_vm._v("\n    top\n  ")]),
-      _vm._v(" "),
-      _c("router-link", { attrs: { to: "about" } }, [
-        _vm._v("\n    about\n  ")
-      ]),
-      _vm._v(" "),
-      _c("router-link", { attrs: { to: "contact" } }, [
-        _vm._v("\n    contact\n  ")
-      ]),
-      _vm._v(" "),
-      _c("router-view")
-    ],
-    1
-  )
+  return _c("div", [
+    _c(
+      "div",
+      { staticClass: "header l-header" },
+      [
+        _c("router-link", { attrs: { to: "/" } }, [
+          _vm._v("\n      top\n    ")
+        ]),
+        _vm._v(" "),
+        _c("router-link", { attrs: { to: "about" } }, [
+          _vm._v("\n      about\n    ")
+        ]),
+        _vm._v(" "),
+        _c("router-link", { attrs: { to: "contact" } }, [
+          _vm._v("\n      contact\n    ")
+        ])
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "content" }, [_c("router-view")], 1)
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

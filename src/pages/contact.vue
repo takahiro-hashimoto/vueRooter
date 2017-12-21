@@ -1,5 +1,9 @@
 <template>
   <div>
-    ここはContactページです。
+    <p>ここはContactページです。</p>
+    <p>ここはContactページです。</p>
+    <p>ここはContactページです。</p>
+    <p>ここはContactページです。</p>
+    <p>ここはContactページです。</p>
   </div>
 </template>
